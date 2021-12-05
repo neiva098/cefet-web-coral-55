@@ -40,31 +40,38 @@ strong {
 
 
 /* EXERCÍCIO 2: layout da página */
+html, body, #recipiente {
+  min-height: 100vh;
+}
+
 #recipiente {
-  /* layout da página aqui */
-  /* ... */
-  /* ... */
-  /* ... */
-  /* ... */
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 100vh;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 164px auto;
+  grid-template-rows: max-content auto max-content;
 }
 
 #cabecalho-pagina {
-
+  grid-column: 2;
 }
 
 #lateral {
-
+  grid-column: 1;
+  grid-row: -1 / 1;
 }
 
 #cardapio {
-
+  grid-column: 2;
+  grid-row: 2;
 }
 
 #rodape-pagina {
-
+  grid-column: 2;
+  grid-row: 3;
 }
-
-
 
 /* EXERCÍCIO 3: cabeçalho da página */
 #cabecalho-pagina {
