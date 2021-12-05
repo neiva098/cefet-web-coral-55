@@ -1,9 +1,13 @@
 /* EXERCÍCIO 1: fontes */
+@import "./fonts/ravie.css";
+@import "./fonts/verdana.css";
+
 /* importá-las aqui... e definir as `font-family` da turminha... */
 
 
 body {
   background-color: #fff;
+  font-family: Verdana;
 }
 
 strong {
@@ -71,6 +75,7 @@ strong {
   margin: 0;
   font-size: 36px;
   color: #e90c0c;
+  font-family: Ravie;
   font-weight: normal;
 }
 
