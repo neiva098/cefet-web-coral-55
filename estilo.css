@@ -8,6 +8,7 @@
 body {
   background-color: #fff;
   font-family: Verdana;
+  color: var(--background-color);
 }
 
 strong {
@@ -15,7 +16,7 @@ strong {
 }
 
 #recipiente {
-  background-image: linear-gradient(to bottom, #f6f1b2, #4599b2 80%);
+  background-image: linear-gradient(to bottom, var(--linear-gradient-start), var(--linear-gradient-end) 80%);
   border-left: 1px solid #d3d3d3;
   border-right: 1px solid #d3d3d3;
 }
@@ -31,13 +32,13 @@ strong {
 
 #cardapio h3 {
   font-size: 18px;
-  color: #333;
+  color: var(--cor-do-texto);
   margin-top: 30px;
 }
 
 #cardapio article {
   font-size: 14px;
-  color: #333;
+  color: var(--cor-do-texto);
 }
 
 
@@ -92,7 +93,7 @@ html, body, #recipiente {
 #cabecalho-pagina h2 {
   margin: 0;
   font-size: 24px;
-  color: #333;
+  color: var(--cor-do-texto);
   font-weight: normal;
   text-align: right;
 }
@@ -144,7 +145,6 @@ article {
   position: relative;
   left: -44px;
 }
-
 /* EXERCÍCIO 9: bolhas - no HTML e no JS */
 /* --- */
 
@@ -155,3 +155,20 @@ article {
 /* coloque aqui a media query para sobrescrever o valor
    das custom properties para o modo escuro */
 
+@media (prefers-color-scheme: dark) {
+ :root {
+    --cor-do-texto: #eee;
+    --background-color: #414141;
+    --linear-gradient-start: #0d1a53;
+    --linear-gradient-end: #000522;
+  }
+}
+  
+@media (prefers-color-scheme: light) {
+  :root {
+    --cor-do-texto: #333;
+    --background-color: #fff;
+    --linear-gradient-start: #f6f1b2;
+    --linear-gradient-end: #4599b2;
+  }
+}
