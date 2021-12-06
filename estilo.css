@@ -25,7 +25,9 @@ strong {
   border-top: 1px solid #aac0ae;
   border-bottom: 1px solid #aac0ae;
   border-left: 1px solid #aac0ae;
+  padding: 20px; 
 }
+/* nao subir */
 
 #cardapio h3 {
   font-size: 18px;
@@ -97,6 +99,10 @@ html, body, #recipiente {
 
 /* EXERCÍCIO 4: cada item do menu */
 article {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 
